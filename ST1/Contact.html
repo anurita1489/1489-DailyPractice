@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<style type="text/css">
+		body{
+			overflow-x: hidden;
+		}
+		#nav{
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			height:10vh;
+			margin-top: -10px;
+			width:100%;
+			margin-left: -10px;
+			margin-right: 0px;
+			background-color: rgb(88,204,237);
+			list-style: none;;
+			margin-bottom: 10px;
+		}
+		.nav_links{
+			color:#07063e;
+			font-family: calibri;
+			font-size:30px;
+			font-weight: bold;
+			text-decoration: none;
+			margin-right: 70px;
+			margin-left: 50px;
+
+		}
+		.label{
+			font-family: calibri;
+			font-size: 30px;
+			font-weight: bold;
+			color:white;
+		}
+		#button{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
+</head>
+<body style="background-color: #07063e;font-family: calibri; ">
+	<header>
+		<ul id="nav">
+			<a href="Home.html" class="nav_links"><li>Home</li></a>
+			<a href="News.html" class="nav_links"><li>News</li></a>
+			<a href="Contact.html" class="nav_links"><li>Contact</li></a>
+			<a href="About.html" class="nav_links"><li>About</li></a>
+	    </ul>
+    </header>
+	<div style="text-align: center " >
+		<form method="get" action="Home.html">
+			<div>
+				<label for="Name" class="label">
+					Name:
+				</label>
+				<input type="text" class="input" name="name" id="Name" placeholder="Enter your name">
+			</div>
+			<br>
+			<div>
+				<label class="label" for="Roll No">
+					Roll No:
+				</label>
+				<input type="number" class="input" name="roll" id="Roll No" placeholder="Enter your rollno">
+			</div>
+			<br>
+			<div>
+				<label class="label" for="email">
+					Email:
+				</label>
+				<input type="email" name="Mymail" id="email" placeholder="Enter your email">
+			</div>
+			<br>
+			<div>
+				<label class="label">
+					Gender: 
+				</label>
+				<input type="radio"  name="gender"> 
+			<label class="label">
+				Male
+			</label>
+			<input type="radio" name="gender">
+			<label class="label">
+				Female
+			</label>
+			</div>
+			<br>
+			<div>
+				<label for="info" class="label">
+					Did you find it informative?
+				</label>
+				<input type="checkbox" class="input" name="information" id="info">
+				<label class="label">
+					Yes
+				</label>
+				<input type="checkbox" class="input" name="information" id="info">
+				<label class="label">
+					No
+				</label>
+			</div>
+			<br>
+			<div>
+				<label class="label" for="option">
+					Experience
+				</label>
+				<select name="Experience" id="option">
+					<option value="Poor">Poor</option>
+					<option value="Average">Averge</option>
+					<option value="good" selected>Good</option>
+					<option value="Very good">Very Good</option>
+				</select>
+			</div>
+			<div>
+				<label class="label" for="review">
+					Any Review
+				</label>
+				<br>
+				<textarea name="Review" cols="30" rows="3" id="review">Suggestions if any</textarea>
+			</div>
+			<br>
+			<br>
+			<!-- <button type="submit" >Submit Now</button> -->
+			<input type="submit" value="Submit Now"/> 			<!-- <button type="reset" value="Reset Now">Reset Now</button> -->
+		</form>
+	</div>
+</body>
+</html>
