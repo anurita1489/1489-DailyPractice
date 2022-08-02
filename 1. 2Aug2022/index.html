@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function myfunction()
+        // {
+        //     let n1= document.getElementById("n1").value;
+        //     // alert("Hello");
+        //     //let k = true;
+        //     if(n1==null || n1=="" || n1==" ")
+        //     {
+        //         // alert("Did not write anything");
+        //         document.getElementById("p1").innerHTML = "<span style='color:blue'>Did not write anything</span>";
+        //     }
+        //     else
+        //     {
+        //         document.getElementById("p1").innerHTML = n1;
+        //     }
+        // }
+        function myfunction()
+        {
+            let n1= document.getElementById("n1").value;
+            let n2= document.getElementById("n2").value;
+            n1= Number(n1);
+            n2 = Number(n2);
+            //alert(isNaN(n1));
+            if(!isNaN(n1) && !isNaN(n2))
+            {
+                document.getElementById("p1").innerHTML = (n1+n2);
+            }
+            else
+            {
+                document.getElementById("p1").innerHTML = "<span style='color:blue'>Entered value is not a number</span>";
+            }
+            //document.getElementById("p1").innerHTML = n1+n2;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="n1" id="n1" />
+    <input type="text" name="n2" id="n2" />
+    <button onclick="myfunction()">Click</button>
+    <p id="p1"></p>
+</body>
+</html>
