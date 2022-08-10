@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            overflow: hidden;
+            background-image: linear-gradient(to bottom right, #FDD6BD, #f794a4);
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        input{
+            width: 800px;
+            padding: 10px 8px;
+        }
+        button{
+            width: 400px;
+            background-image: linear-gradient(to top left,  #FDD6BD, #f794a4);
+            padding: 8px 10px;
+            font-weight: bold;
+        }
+        #t2{
+            transition: all 2s ease-in-out;
+          height: 0px;
+          width: 0px;
+          background-image: linear-gradient(to top left,  #DAD4EC, #F3E7E9); 
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Enter a number to create a Square Shape</h1>
+        <input type="text" id="t1">
+        <br><br>
+        <button type="button" onclick="create()">Create Sqaure Shape</button>
+        <br><br><br>
+        <div id="t2"></div>
+    </center>
+    <script>
+        function create()
+        {
+            var s1 = document.getElementById("t1").value;
+            s1=Number(s1);
+            if(isNaN(s1))
+            {
+                alert("ERROR!! Enter a valid number");
+            }
+            else
+            {
+                let rem = 0;
+                let sum =0;
+                let count = 0;
+                while(s1!=0)
+                {
+                    rem=s1%10;
+                    sum= sum+rem;
+                    s1=Math.floor(s1/10);
+                    count++;
+                }
+                if(count<5 || count>5)
+                {
+                    document.getElementById("t2").style.height=0+"px";
+                    document.getElementById("t2").style.width=0+"px";
+                    document.getElementById("t2").style.borderRadius=0+"px";
+                    alert("ERROR!! Enter a 5-digit number ");
+                }
+                else 
+                {
+                    document.getElementById("t2").style.height=sum+"px";
+                    document.getElementById("t2").style.width=sum+"px";
+                    document.getElementById("t2").style.borderRadius=sum/5+"px";
+                }   
+            }
+        }
+    </script>
+
+</body>
+</html>
