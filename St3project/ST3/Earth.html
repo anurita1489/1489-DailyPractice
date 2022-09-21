@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Earth.css">
+</head>
+<body>
+    <div class="nav">
+        <div id="div1"><a href="home.html"><img src="logo.png" height="50px" width="50px"></a></div>
+        <div id="div2"><a href="home.html"><b>Solar Weight</b></a></div>
+    </div>
+    <div class="main">
+        <center>
+        <label>Enter Your Weight: </label>
+        <input type="number" id="earth1">
+        <br>
+        <button type="submit" onclick="funearth()">Calculate</button>
+        <p id = "box4"></p>
+    </center>
+    </div>
+    <script>
+        function funearth()
+        {
+            var x=document.getElementById("earth1").value;
+            if(!x){
+                x=0;
+            }
+            let w=x*1;
+            document.getElementById("box4").innerHTML = "Your weight on earth is " + x + "kg and you will weigh "+w.toFixed(1)+"kg on earth." ;
+        }
+    </script>
+</body>
+</html>

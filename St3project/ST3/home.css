@@ -1,0 +1,147 @@
+body{
+    background-image: url("uni.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* overflow: hidden; */
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    opacity: 0.9;
+    margin-top: -10px;
+    display: flex;
+    background-color: gray;
+}
+.nav > div{
+    font-family: Brush Script MT;
+    display: flex;
+    font-size: 60px;
+    align-items: center;
+}
+.tp1{
+    background-color: rgba(128, 128, 128, 0.563);
+    text-align: center;
+    color: aquamarine;
+}
+#div1{
+    margin-left: auto;
+}
+#div2{
+    margin-right: auto;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox > div {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: rgba(243, 243, 250, 0.534);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    color: aliceblue;
+    text-align: center;
+    padding-right: 5px;
+    transition: transform .8s; 
+}
+.flexbox > div:hover{
+    transform: scale(1.2);
+}
+.flexbox > div > img{
+    padding-top: 50px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 150px;
+}
+#im1{
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 190px;
+    height: 200px;
+}
+#im2{
+    padding-top: 10px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 215px;
+}
+#im3{
+    padding-top: 20px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 220px;
+}
+#im4{
+    padding-top: 10px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 240px;
+}
+#im5{
+    padding-top: 35px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 230px;
+}
+#im6{
+    padding-top: 32px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 230px;
+}
+#im7{
+    padding-top: 20px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 230px;
+}
+#im8{
+    padding-top: 27px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 230px;
+}
+#im9{
+    padding-top: 35px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    height: 250px;
+}
+#im10{
+    padding-top: 35px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 230px;
+}
+#im11{
+    padding-top: 33px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+    height: 200px;
+}
