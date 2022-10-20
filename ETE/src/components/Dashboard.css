@@ -1,0 +1,105 @@
+.mainbox{
+    display: flex;
+}
+.mainbox>div{
+    background-color: rgba(76, 77, 89, 0.484);
+    color: aliceblue;
+    
+}
+.leftside{
+    display: flex;
+    height:1000px;
+    width: 20%;
+    
+}
+.leftside>div{
+    position: sticky;
+}
+.middle{
+    display: block;
+    border-radius: 7px;
+    width: 55%;
+    margin: 20px;
+}
+.div1{
+    color: aliceblue;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+.div2{
+    display: flex;
+    color: aliceblue;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+:root {
+    --outer-shadow: 
+      0 0 0.1vw 0.4vw #e0f7fa,
+      0 0 0.4vw 0.6vw #00e5ff,
+      0 0 1vw 0.4vw #26c6da;
+  }
+.cards{
+    background-color: rgb(1, 5, 8);
+    display: flex;
+    border-radius:5px ;
+    margin-top: 10px;
+    margin-left: 25px;
+    height: 100px;
+}
+.cards:hover{
+    box-shadow: var(--outer-shadow);
+}
+.views1{
+    margin-top: 20px;
+    margin-left: 56px;
+}
+.views2{
+    margin-top: 20px;
+    margin-left: 56px;
+}
+.views3{
+    margin-top: 20px;
+    margin-left: 56px;
+}
+.div3{
+    background-color: rgba(16, 17, 24, 0.77);
+    color: aliceblue;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 70px;
+    border-radius: 5px;
+}
+
+.rightside{
+    display: block;
+    border-radius: 7px;
+    width: 25%;
+    margin: 20px;
+}
+.topskills{
+    display: block;
+
+}
+.topskills>h2{
+    background-image: linear-gradient(90deg,#03b1fb,white);
+    background-clip: text;
+    color: transparent;
+}
+.placeimage{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+h2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+ul{
+    list-style-type: none;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 40px;
+}
